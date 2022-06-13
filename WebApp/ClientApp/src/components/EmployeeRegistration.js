@@ -30,8 +30,6 @@ export const EmployeeRegistration = () => {
 
     const handleChange = (e) => {
         const value = e.target.value;
-        console.log('values es', value);
-        console.log('name es', e.target.name);
         
         setState({
             ...state,

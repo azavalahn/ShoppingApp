@@ -1,5 +1,5 @@
 ﻿export const getEmployees = async () => {
-    const url = `http://backend/api/employee`;
+    const url = `http://localhost/services/api/employee`;
     const response = await fetch(url);
     const data  = await response.json();
     const employees = data.map(e => {

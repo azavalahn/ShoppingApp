@@ -8,7 +8,7 @@ export const postEmployee =  async (payload) => {
         };
 
     try {
-        const response = await fetch('http://backend/api/employee', requestOptions);
+        const response = await fetch('http://localhost/services/api/employee', requestOptions);
         const data = await response.json();
         
     }
