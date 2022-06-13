@@ -1,5 +1,7 @@
 ﻿import { getEmployees } from '../helpers/getEmployees';
 import { postEmployee } from '../helpers/postEmployee';
+import { getEmployeeTypes } from '../helpers/getEmployeeTypes';
+
 
 describe('Helpers Unit tests', () => {
     test('getEmployees should fetch data correctly ', async () => {
@@ -11,7 +13,7 @@ describe('Helpers Unit tests', () => {
 
     test('getEmployeeTypes should fetch data correctly ', async () => {
 
-        const employeeTypes = await getEmployees();
+        const employeeTypes = await getEmployeeTypes();
         expect(JSON.stringify(employeeTypes).includes('name')).toBe(true);
 
     });
